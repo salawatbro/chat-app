@@ -1,0 +1,14 @@
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"  # Expose MongoDB on port 27017
+    volumes:
+      - mongo_data:/data/db  # Persist MongoDB data
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root  # Root username
+      MONGO_INITDB_ROOT_PASSWORD: example  # Root password
+
+volumes:
+  mongo_data:  # Create a named volume for data persistence

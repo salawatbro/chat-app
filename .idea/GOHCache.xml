@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="App">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AuthHandler">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/handlers/auth_handler.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AuthRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repositories/auth_repository.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AuthService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/services/auth_service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Config">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DB">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Database">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/database/db.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ErrorResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/utils/json.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Hub">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/websocket/hub.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LoginDTO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/dto/auth_dto.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Message">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/message.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MessageRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/handlers/chat.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RegisterDTO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/dto/auth_dto.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="defaultResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/utils/json.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="messageRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/handlers/chat.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/docker-compose.yml.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727952270292" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/config/config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727981705125" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                  <option value="DB" />
+                  <option value="App" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/dto/auth_dto.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727981885558" />
+              <option name="schema">
+                <list>
+                  <option value="RegisterDTO" />
+                  <option value="LoginDTO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/handlers/auth.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727953558670" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/handlers/auth_handler.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728021272426" />
+              <option name="schema">
+                <list>
+                  <option value="AuthHandler" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/handlers/chat.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727958287820" />
+              <option name="schema">
+                <list>
+                  <option value="messageRequest" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/handlers/ws.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727957759367" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/interfaces/auth_interface.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728021272438" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/models/message.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727953432261" />
+              <option name="schema">
+                <list>
+                  <option value="Message" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/models/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728021086923" />
+              <option name="schema">
+                <list>
+                  <option value="User" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repositories/auth_repository.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728021011207" />
+              <option name="schema">
+                <list>
+                  <option value="AuthRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/routes/routes.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728020647140" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/services/auth_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728021281681" />
+              <option name="schema">
+                <list>
+                  <option value="AuthService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/services/chat_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727955779033" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/services/message_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727951560428" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/websocket/hub.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727955714688" />
+              <option name="schema">
+                <list>
+                  <option value="Hub" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728020405690" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/constants/constants.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727981456813" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/constants/errors.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727981431500" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/database/db.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728020017870" />
+              <option name="schema">
+                <list>
+                  <option value="Database" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/utils/json.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727981537943" />
+              <option name="schema">
+                <list>
+                  <option value="defaultResponse" />
+                  <option value="ErrorResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/utils/logger.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727981580320" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/utils/validator.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1727981514725" />
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="app" value="App" />
+        <entry key="auth_handler" value="AuthHandler" />
+        <entry key="auth_repository" value="AuthRepository" />
+        <entry key="auth_service" value="AuthService" />
+        <entry key="config" value="Config" />
+        <entry key="database" value="Database" />
+        <entry key="db" value="DB" />
+        <entry key="default_response" value="defaultResponse" />
+        <entry key="error_response" value="ErrorResponse" />
+        <entry key="hub" value="Hub" />
+        <entry key="login_dto" value="LoginDTO" />
+        <entry key="message" value="Message" />
+        <entry key="message_request" value="messageRequest" />
+        <entry key="register_dto" value="RegisterDTO" />
+        <entry key="user" value="User" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1727951192167" />
+  </component>
+</project>
