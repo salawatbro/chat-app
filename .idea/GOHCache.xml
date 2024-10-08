@@ -59,10 +59,17 @@
             </set>
           </value>
         </entry>
-        <entry key="Hub">
+        <entry key="JWT">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/internal/websocket/hub.go" />
+              <option value="file://$PROJECT_DIR$/internal/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="JwtCustomClaims">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/middlewares/jwt.go" />
             </set>
           </value>
         </entry>
@@ -73,6 +80,13 @@
             </set>
           </value>
         </entry>
+        <entry key="LoginResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/response/auth_response.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Message">
           <value>
             <set>
@@ -80,10 +94,10 @@
             </set>
           </value>
         </entry>
-        <entry key="MessageRequest">
+        <entry key="Pagination">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/internal/handlers/chat.go" />
+              <option value="file://$PROJECT_DIR$/pkg/utils/pagination.go" />
             </set>
           </value>
         </entry>
@@ -91,6 +105,27 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/dto/auth_dto.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RegisterResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/response/auth_response.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Session">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/session.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SkipperRoutesData">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/middlewares/jwt.go" />
             </set>
           </value>
         </entry>
@@ -108,33 +143,20 @@
             </set>
           </value>
         </entry>
-        <entry key="messageRequest">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/internal/handlers/chat.go" />
-            </set>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="scannedPathMapping">
       <map>
-        <entry key="file://$PROJECT_DIR$/docker-compose.yml.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1727952270292" />
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/internal/config/config.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1727981705125" />
+              <option name="lastModified" value="1728368742446" />
               <option name="schema">
                 <list>
                   <option value="Config" />
                   <option value="DB" />
                   <option value="App" />
+                  <option value="JWT" />
                 </list>
               </option>
             </ScannedPath>
@@ -153,17 +175,10 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/internal/handlers/auth.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1727953558670" />
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/internal/handlers/auth_handler.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728021272426" />
+              <option name="lastModified" value="1728370125272" />
               <option name="schema">
                 <list>
                   <option value="AuthHandler" />
@@ -172,29 +187,37 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/internal/handlers/chat.go">
+        <entry key="file://$PROJECT_DIR$/internal/interfaces/auth_interface.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1727958287820" />
+              <option name="lastModified" value="1728372689680" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/middlewares/fiber.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728370087611" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/middlewares/jwt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728371877231" />
               <option name="schema">
                 <list>
-                  <option value="messageRequest" />
+                  <option value="JwtCustomClaims" />
+                  <option value="SkipperRoutesData" />
                 </list>
               </option>
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/internal/handlers/ws.go">
+        <entry key="file://$PROJECT_DIR$/internal/models/Session.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1727957759367" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/internal/interfaces/auth_interface.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1728021272438" />
+              <option name="lastModified" value="1728370234637" />
             </ScannedPath>
           </value>
         </entry>
@@ -205,6 +228,18 @@
               <option name="schema">
                 <list>
                   <option value="Message" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/models/session.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728373390277" />
+              <option name="schema">
+                <list>
+                  <option value="Session" />
                 </list>
               </option>
             </ScannedPath>
@@ -225,7 +260,7 @@
         <entry key="file://$PROJECT_DIR$/internal/repositories/auth_repository.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728021011207" />
+              <option name="lastModified" value="1728372732665" />
               <option name="schema">
                 <list>
                   <option value="AuthRepository" />
@@ -234,17 +269,30 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/response/auth_response.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728371567750" />
+              <option name="schema">
+                <list>
+                  <option value="RegisterResponse" />
+                  <option value="LoginResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/routes/routes.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728020647140" />
+              <option name="lastModified" value="1728368082647" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/internal/services/auth_service.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728021281681" />
+              <option name="lastModified" value="1728372844156" />
               <option name="schema">
                 <list>
                   <option value="AuthService" />
@@ -253,36 +301,10 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/internal/services/chat_service.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1727955779033" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/internal/services/message_service.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1727951560428" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/internal/websocket/hub.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1727955714688" />
-              <option name="schema">
-                <list>
-                  <option value="Hub" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728020405690" />
+              <option name="lastModified" value="1728368843546" />
             </ScannedPath>
           </value>
         </entry>
@@ -296,7 +318,7 @@
         <entry key="file://$PROJECT_DIR$/pkg/constants/errors.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1727981431500" />
+              <option name="lastModified" value="1728371332726" />
             </ScannedPath>
           </value>
         </entry>
@@ -315,7 +337,7 @@
         <entry key="file://$PROJECT_DIR$/pkg/utils/json.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1727981537943" />
+              <option name="lastModified" value="1728369003567" />
               <option name="schema">
                 <list>
                   <option value="defaultResponse" />
@@ -329,6 +351,18 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1727981580320" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/utils/pagination.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1719229849302" />
+              <option name="schema">
+                <list>
+                  <option value="Pagination" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -352,14 +386,19 @@
         <entry key="db" value="DB" />
         <entry key="default_response" value="defaultResponse" />
         <entry key="error_response" value="ErrorResponse" />
-        <entry key="hub" value="Hub" />
+        <entry key="jwt" value="JWT" />
+        <entry key="jwt_custom_claims" value="JwtCustomClaims" />
         <entry key="login_dto" value="LoginDTO" />
+        <entry key="login_response" value="LoginResponse" />
         <entry key="message" value="Message" />
-        <entry key="message_request" value="messageRequest" />
+        <entry key="pagination" value="Pagination" />
         <entry key="register_dto" value="RegisterDTO" />
+        <entry key="register_response" value="RegisterResponse" />
+        <entry key="session" value="Session" />
+        <entry key="skipper_routes_data" value="SkipperRoutesData" />
         <entry key="user" value="User" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1727951192167" />
+    <option name="lastTimeChecked" value="1728367736982" />
   </component>
 </project>

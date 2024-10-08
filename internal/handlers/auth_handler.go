@@ -26,6 +26,9 @@ func (handler *AuthHandler) Register(ctx *fiber.Ctx) error {
 }
 
 func (handler *AuthHandler) Login(ctx *fiber.Ctx) error {
-	//TODO implement me
-	panic("implement me")
+	req := new(dto.LoginDTO)
+	if err := ctx.BodyParser(req); err != nil {
+		return utils.JsonError(ctx, err, "ERR_BAD_REQUEST")
+	}
+	return handler.service.Login(ctx, req)
 }

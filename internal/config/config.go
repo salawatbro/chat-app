@@ -3,11 +3,13 @@ package config
 import (
 	"github.com/spf13/viper"
 	"log"
+	"time"
 )
 
 type Config struct {
 	App App
 	DB  DB
+	JWT JWT
 }
 
 type DB struct {
@@ -16,9 +18,16 @@ type DB struct {
 }
 
 type App struct {
-	Port string
-	Env  string
-	Name string
+	Port       string
+	Env        string
+	Name       string
+	MaxRequest int
+	Debug      bool
+}
+
+type JWT struct {
+	Secret  string
+	Expires time.Duration
 }
 
 func LoadConfig() (Config, error) {
@@ -34,13 +43,19 @@ func LoadConfig() (Config, error) {
 
 	return Config{
 		App: App{
-			Port: viper.GetString("APP_PORT"),
-			Env:  viper.GetString("APP_ENV"),
-			Name: viper.GetString("APP_NAME"),
+			Port:       viper.GetString("APP_PORT"),
+			Env:        viper.GetString("APP_ENV"),
+			Name:       viper.GetString("APP_NAME"),
+			MaxRequest: viper.GetInt("APP_MAX_REQUEST"),
+			Debug:      viper.GetBool("APP_DEBUG"),
 		},
 		DB: DB{
 			MongoDBURI:   viper.GetString("MONGODB_URI"),
 			DatabaseName: viper.GetString("DATABASE_NAME"),
+		},
+		JWT: JWT{
+			Secret:  viper.GetString("JWT_SECRET"),
+			Expires: viper.GetDuration("JWT_EXPIRES"),
 		},
 	}, nil
 }

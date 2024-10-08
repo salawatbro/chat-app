@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/salawatbro/chat-app/internal/config"
+	"github.com/salawatbro/chat-app/internal/middlewares"
 	"github.com/salawatbro/chat-app/internal/routes"
 	"github.com/salawatbro/chat-app/pkg/database"
 	"github.com/salawatbro/chat-app/pkg/utils"
@@ -30,8 +31,10 @@ func main() {
 			utils.Logger.Error("Error while disconnecting from database", zap.Error(err))
 		}
 	}()
+	//middleware setup
+	middlewares.Setup(app, &configData)
 	// setup routes
-	routes.Setup(app, db)
+	routes.Setup(app, db, &configData)
 	// listen to port 3000
 	err = app.Listen(":" + configData.App.Port)
 	if err != nil {
