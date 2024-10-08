@@ -4,9 +4,9 @@ import (
 	"errors"
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt"
+	"github.com/salawatbro/chat-app/internal/config"
 	"github.com/salawatbro/chat-app/pkg/utils"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	"os"
 	"strings"
 	"time"
 )
@@ -21,7 +21,7 @@ type SkipperRoutesData struct {
 	UrlPath string
 }
 
-func JwtMiddleware() fiber.Handler {
+func JwtMiddleware(cfg *config.Config) fiber.Handler {
 	return func(ctx *fiber.Ctx) error {
 		ctx.Set("X-XSS-Protection", "1; mode=block")
 		ctx.Set("Strict-Transport-Security", "max-age=5184000")
@@ -41,7 +41,7 @@ func JwtMiddleware() fiber.Handler {
 		}
 		// verify token
 		jwtToken, err := jwt.ParseWithClaims(authorizationToken, &JwtCustomClaims{}, func(token *jwt.Token) (interface{}, error) {
-			return []byte(os.Getenv("JWT_SECRET")), nil
+			return []byte(cfg.JWT.Secret), nil
 		})
 		if err != nil {
 			return utils.JsonErrorUnauthorized(ctx, err)

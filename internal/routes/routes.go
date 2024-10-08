@@ -11,13 +11,22 @@ import (
 )
 
 func Setup(app *fiber.App, db *database.Database, cfg *config.Config) {
-	api := app.Group("/api", middlewares.JwtMiddleware())
+	api := app.Group("/api", middlewares.JwtMiddleware(cfg))
 	//repositories
 	authRepo := repositories.NewAuthRepository(db.DB)
+	groupRepo := repositories.NewGroupRepository(db.DB)
 
 	//auth routes
 	authHandler := handlers.NewAuthHandler(services.NewAuthService(authRepo, cfg))
 	authRoutes := api.Group("/auth")
 	authRoutes.Post("/register", authHandler.Register)
 	authRoutes.Post("/login", authHandler.Login)
+	//group routes
+	groupHandler := handlers.NewGroupHandler(services.NewGroupService(groupRepo))
+	groupRoutes := api.Group("/groups")
+	groupRoutes.Get("/", groupHandler.FindAll)
+	groupRoutes.Get("/:id", groupHandler.FindByID)
+	groupRoutes.Post("/", groupHandler.Create)
+	groupRoutes.Put("/:id", groupHandler.Update)
+	groupRoutes.Delete("/:id", groupHandler.Delete)
 }

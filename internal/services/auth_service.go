@@ -43,10 +43,11 @@ func (service *AuthService) Register(ctx *fiber.Ctx, req *dto.RegisterDTO) error
 		return utils.JsonError(ctx, err, "ERR_INTERNAL_SERVER")
 	}
 	user := models.User{
-		ID:       primitive.NewObjectID(),
-		Name:     req.Name,
-		Email:    req.Email,
-		Password: string(password),
+		ID:        primitive.NewObjectID(),
+		Name:      req.Name,
+		Email:     req.Email,
+		Password:  string(password),
+		CreatedAt: primitive.NewDateTimeFromTime(time.Now()),
 	}
 	_, err = service.repo.Register(ctx, user)
 	if err != nil {
@@ -68,8 +69,7 @@ func (service *AuthService) Login(ctx *fiber.Ctx, req *dto.LoginDTO) error {
 		return utils.JsonErrorUnauthorized(ctx, constants.ErrInvalidAuth)
 	}
 	// Generate token
-	expireHour, _ := time.ParseDuration(service.Config.JWT.Expires.String())
-	expiresAt := time.Now().Add(expireHour)
+	expiresAt := time.Now().Add(service.Config.JWT.Expires)
 	token, err := service.generateToken(user.ID, expiresAt.Unix())
 	if err != nil {
 		return utils.JsonErrorUnauthorized(ctx, err)

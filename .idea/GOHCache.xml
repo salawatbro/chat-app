@@ -10,6 +10,13 @@
             </set>
           </value>
         </entry>
+        <entry key="Attachment">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/message.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="AuthHandler">
           <value>
             <set>
@@ -28,6 +35,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/services/auth_service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Chat">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/chat.go" />
             </set>
           </value>
         </entry>
@@ -59,6 +73,71 @@
             </set>
           </value>
         </entry>
+        <entry key="Group">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/chat.go" />
+              <option value="file://$PROJECT_DIR$/internal/models/group.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupDTO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/dto/group_dto.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupHandler">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/handlers/group_handler.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupMember">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/chat.go" />
+              <option value="file://$PROJECT_DIR$/internal/models/group.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repositories/group_repository.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/response/group_response.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/services/group_service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupUser">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/group.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GroupsResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/response/group_response.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="JWT">
           <value>
             <set>
@@ -70,6 +149,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/middlewares/jwt.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LastMessage">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/chat.go" />
             </set>
           </value>
         </entry>
@@ -98,6 +184,34 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/pkg/utils/pagination.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Participant">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/chat.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Participants">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/chat.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Reachtion">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/message.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Reaction">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/models/message.go" />
             </set>
           </value>
         </entry>
@@ -133,6 +247,7 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/models/user.go" />
+              <option value="file://$PROJECT_DIR$/internal/response/group_response.go" />
             </set>
           </value>
         </entry>
@@ -175,6 +290,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/dto/group_dto.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728380077487" />
+              <option name="schema">
+                <list>
+                  <option value="GroupDTO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/handlers/auth_handler.go">
           <value>
             <ScannedPath>
@@ -187,10 +314,29 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/handlers/group_handler.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728383691148" />
+              <option name="schema">
+                <list>
+                  <option value="GroupHandler" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/interfaces/auth_interface.go">
           <value>
             <ScannedPath>
               <option name="lastModified" value="1728372689680" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/interfaces/group_interface.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728388799579" />
             </ScannedPath>
           </value>
         </entry>
@@ -204,7 +350,7 @@
         <entry key="file://$PROJECT_DIR$/internal/middlewares/jwt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728371877231" />
+              <option name="lastModified" value="1728384759299" />
               <option name="schema">
                 <list>
                   <option value="JwtCustomClaims" />
@@ -221,12 +367,41 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/models/chat.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728389541507" />
+              <option name="schema">
+                <list>
+                  <option value="Participant" />
+                  <option value="LastMessage" />
+                  <option value="Chat" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/models/group.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728386623787" />
+              <option name="schema">
+                <list>
+                  <option value="GroupMember" />
+                  <option value="Group" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/models/message.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1727953432261" />
+              <option name="lastModified" value="1728388501731" />
               <option name="schema">
                 <list>
+                  <option value="Attachment" />
+                  <option value="Reaction" />
                   <option value="Message" />
                 </list>
               </option>
@@ -248,7 +423,7 @@
         <entry key="file://$PROJECT_DIR$/internal/models/user.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728021086923" />
+              <option name="lastModified" value="1728388594540" />
               <option name="schema">
                 <list>
                   <option value="User" />
@@ -269,6 +444,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repositories/group_repository.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728389030614" />
+              <option name="schema">
+                <list>
+                  <option value="GroupRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/response/auth_response.go">
           <value>
             <ScannedPath>
@@ -282,20 +469,46 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/response/group_response.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728389240874" />
+              <option name="schema">
+                <list>
+                  <option value="User" />
+                  <option value="GroupResponse" />
+                  <option value="GroupsResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/routes/routes.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728368082647" />
+              <option name="lastModified" value="1728384778278" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/internal/services/auth_service.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1728372844156" />
+              <option name="lastModified" value="1728389114682" />
               <option name="schema">
                 <list>
                   <option value="AuthService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/services/group_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728389555064" />
+              <option name="schema">
+                <list>
+                  <option value="GroupService" />
                 </list>
               </option>
             </ScannedPath>
@@ -366,6 +579,13 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/utils/utils.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1728383246326" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/pkg/utils/validator.go">
           <value>
             <ScannedPath>
@@ -378,20 +598,36 @@
     <option name="tableStructMapping">
       <map>
         <entry key="app" value="App" />
+        <entry key="attachment" value="Attachment" />
         <entry key="auth_handler" value="AuthHandler" />
         <entry key="auth_repository" value="AuthRepository" />
         <entry key="auth_service" value="AuthService" />
+        <entry key="chat" value="Chat" />
         <entry key="config" value="Config" />
         <entry key="database" value="Database" />
         <entry key="db" value="DB" />
         <entry key="default_response" value="defaultResponse" />
         <entry key="error_response" value="ErrorResponse" />
+        <entry key="group" value="Group" />
+        <entry key="group_dto" value="GroupDTO" />
+        <entry key="group_handler" value="GroupHandler" />
+        <entry key="group_member" value="GroupMember" />
+        <entry key="group_repository" value="GroupRepository" />
+        <entry key="group_response" value="GroupResponse" />
+        <entry key="group_service" value="GroupService" />
+        <entry key="group_user" value="GroupUser" />
+        <entry key="groups_response" value="GroupsResponse" />
         <entry key="jwt" value="JWT" />
         <entry key="jwt_custom_claims" value="JwtCustomClaims" />
+        <entry key="last_message" value="LastMessage" />
         <entry key="login_dto" value="LoginDTO" />
         <entry key="login_response" value="LoginResponse" />
         <entry key="message" value="Message" />
         <entry key="pagination" value="Pagination" />
+        <entry key="participant" value="Participant" />
+        <entry key="participants" value="Participants" />
+        <entry key="reachtion" value="Reachtion" />
+        <entry key="reaction" value="Reaction" />
         <entry key="register_dto" value="RegisterDTO" />
         <entry key="register_response" value="RegisterResponse" />
         <entry key="session" value="Session" />
